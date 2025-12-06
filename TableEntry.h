@@ -19,12 +19,12 @@ class TableEntry
 		TableEntry(string key)
 		{
 			this->key = key;
-			this->value = NULL;
+			this->value = 0;
 		}
 		TableEntry()
 		{
 			this->key = "";
-			this->value = NULL;
+			this->value = 0;
 		}
 		friend bool operator==(const TableEntry<V> &te1, const TableEntry<V> &te2)
 		{
