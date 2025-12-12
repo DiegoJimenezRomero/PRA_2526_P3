@@ -97,7 +97,7 @@ class HashTable: public Dict<V>
 			//Si no está (la función search() devuelve -1 si no se encuentra nada)
 			if(search == -1)
 			{
-				table[position].append(newEntry);
+				table[position].prepend(newEntry);
 				n++;
 			}
 			else throw runtime_error("La clave ya está en la tabla");
